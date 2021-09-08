@@ -11,4 +11,4 @@ orderNumber.textContent = "Numéro de commande : " + orderId;
 const totalOrder = document.getElementById('totalOrder');
 totalOrder.textContent = "Montant total de votre commande : " + totalPriceInBasket / 100 + ".00 €";
 
-localStorage.clear(); //Efface le localStorage
+localStorage.clear(); //Efface le localStorage    

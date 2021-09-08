@@ -3,6 +3,7 @@
 //Création d'une variable pour manipuler le panier
 let addToBasket = JSON.parse(localStorage.getItem("basket"));
 
+
 const productContainer = document.querySelector("#itemsInBasket");
 
 let displayBasket = [];
@@ -43,7 +44,7 @@ if(addToBasket === null || addToBasket == 0 ) {
                     </div>
                     <div class="col-2 col-md-1">
                         <div>
-                        <button type="button" class="btn btn-sm btn-danger btnRemove"><i class="bi bi-trash"></i></button>
+                        <button type="button" class="btn btn-sm btn-danger btnRemove"><i class="fas fa-trash-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -109,7 +110,7 @@ for (let l = 0; l < buttonRemove.length; l++) { //Ecouter les clics sur le bouto
 }
 
 
-/**Gère la forme de contact de la page Panier */
+/**Gère la forme de contact de la page Panier*/
 
   function checkIfFieldIsValid(input, regExp) {
     return input.value.match(regExp) !== null;
